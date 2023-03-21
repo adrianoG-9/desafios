@@ -4,28 +4,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
-:root{
+:root {
     --font1: 'Yellowtail', cursive;
     --font2: 'Sono', sans-serif;
-    --font3: 'Monoton', cursive;;   
+    --font3: 'Monoton', cursive;
+    ;
 }
 
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-html, body{
+html,
+body {
     min-height: 100vh;
     background-color: darkgray;
 }
 
-header{
+header {
     background-color: black;
 }
 
-header h1{
+header h1 {
     font-size: 10vw;
     font-family: var(--font3);
     text-align: center;
@@ -35,13 +37,28 @@ header h1{
 
 }
 
-header p{
+header p {
     font-size: 1em;
     font-family: var(--font2);
     color: white;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 50px;
+}
+
+header a:hover,
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+
+
+}
+
+header a,
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
 }
 
 section {
@@ -53,42 +70,47 @@ section {
     padding-left: 10vw;
 }
 
-header a:hover, footer a:hover{
-    color: white;
-    text-decoration: underline;
-    transition-duration: 2s;
-    
-}
-
-header a, footer a{
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-}
-
-section.normal{
+section.normal {
     background-color: white;
     color: black;
 }
 
-section.imagem{
+section.imagem {
     color: white;
-    background-color: rgba(0, 0, 0, 0.744);
+    background-color: #000000be;
+    box-shadow: inset 6px 6px 13px 0px #0000008f;
+    background-attachment: fixed;
 }
 
-section.imagem> p{
+section.imagem>p {
+    text-shadow: 1px 1px 2px #00000050;
     display: inline-block;
     border-radius: 4px;
     padding: 10px;
     border-left: 10px;
-    background-color: rgba(0, 0, 0, 0.416);
+    background-color: #0000006a;
 }
 
-footer{
+section#img01 {
+    background-image: url('d012/imagens/background001.jpg');
+    background-position: center center;
+    background-size: cover;
+
+}
+
+section#img02 {
+    background-image: url('d012/imagens/background002.jpg');
+    background-size: cover;
+}
+
+section p {
+    padding-bottom: 40px;
+}
+
+footer {
     padding: .8px;
-    
+
     color: white;
     background-color: black;
     text-align: center;
 }
-
