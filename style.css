@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root{
+    --font1: 'Yellowtail', cursive;
+    --font2: 'Sono', sans-serif;
+    --font3: 'Monoton', cursive;;   
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -15,6 +26,8 @@ header{
 }
 
 header h1{
+    font-size: 10vw;
+    font-family: var(--font3);
     text-align: center;
     color: white;
     padding-top: 50px;
@@ -23,6 +36,8 @@ header h1{
 }
 
 header p{
+    font-size: 1em;
+    font-family: var(--font2);
     color: white;
     text-align: center;
     padding-top: 10px;
@@ -30,10 +45,12 @@ header p{
 }
 
 section {
+    font-size: 30px;
+    font-family: var(--font1);
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
+    line-height: 1.5em;
+    padding-left: 10vw;
 }
 
 header a:hover, footer a:hover{
@@ -43,8 +60,8 @@ header a:hover, footer a:hover{
     
 }
 
-
 header a, footer a{
+    text-decoration: none;
     color: white;
     font-weight: bolder;
 }
@@ -58,15 +75,18 @@ section.imagem{
     color: white;
     background-color: rgba(0, 0, 0, 0.744);
 }
+
 section.imagem> p{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px;
+    border-left: 10px;
     background-color: rgba(0, 0, 0, 0.416);
 }
 
-section p{
-    padding: 10px;
-}
-
 footer{
+    padding: .8px;
+    
     color: white;
     background-color: black;
     text-align: center;
