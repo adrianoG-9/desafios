@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela de filmes</title>
+
+    <style>
+        table {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            box-sizing: border-box;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+       th{
+        color: rgb(17, 16, 16);
+        background-color: #808080;
+       }
+       
+       td{
+        
+        color: white;
+        background-color: #3b3939;
+       }
+
+       .nome{
+        background-color: #9a9a9a;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+       }
+
+       tfoot th{
+        font-size: larger;
+        background-color: white;
+        color: black;
+       }
+
+       
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <caption>Filmes Favoritos</caption>
+
+        <thead>
+            <tr>
+                <th scope="row">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td class="nome">Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                <td class="nome">baby pinto</td>
+                <td>Ghost</td>
+                <td>Lord of rings</td>
+                <td>Tubarão</td>
+            </tr>
+
+            <tr>
+                <td class="nome">cláudia Lamb</td>
+                <td>Gladiador</td>
+                <td>Cruzadas</td>
+                <td>the good father</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td class="nome">Nobson Neves</td>
+                <td>Deadpool</td>
+                <td>Dracula</td>
+                <td>O ultimo moicano</td>
+            </tr>
+
+            <tr>
+                <td class="nome">Fagundes Rio</td>
+                <td>American pie</td>
+                <td>Maré negra</td>
+                <td>O ultimo dragão</td>
+            </tr>
+
+            <tr>
+                <td class="nome">Brelo braulio</td>
+                <td>Casa blanca</td>
+                <td>Gets be</td>
+                <td>Sicário</td>
+            </tr>
+            
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>Grátis</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
